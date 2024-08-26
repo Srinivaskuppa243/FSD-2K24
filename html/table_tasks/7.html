@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <style>
+            table,tr,th,td{
+                border:2px solid black
+            }
+            table{
+                height:80%;
+                width:80%;
+                margin:auto;
+            }
+            td{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body style="text-align:center">
+        <h1>Using Tables in Websites</h1><br>
+        <p>Caption Nested Table</p>
+        <table>
+            <tr>
+                <th>Column1</th>
+                <th colspan="3">Column2</th>
+            </tr>
+            <tr>
+                <td colspan="4"> Colspan column</td>
+            </tr>
+            <tr>
+                <th rowspan="5"> Rowspan Cell</th>
+                <th colspan="3">Cell 2</th>
+            </tr>
+            <tr>
+                <th rowspan="3" colspan="3">
+                    <table style="background-color:coral;height:100%;width:100%">
+                        <tr>
+                            <th>Inner Column Heading 1</th>
+                            <th colspan="2">Inner Column Heading 2</th>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">Inner data cell 1</td>
+                            <th rowspan="2" colspan="2" style="padding:20px;background-color:yellow">
+                                <table style="padding:10px;background-color:palevioletred">
+                                    <tr>
+                                        <th>Inner most column heading 1</th>
+                                        <th>Inner most column heading 2</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Inner most Datacell 1</td>
+                                        <td>Inner most Datacell 2</td>
+                                    </tr>
+                                </table>
+                            </th>
+                        </tr>
+                    </table>
+                </th>
+            </tr>
+
+        </table>
+    </body>
+</html>
